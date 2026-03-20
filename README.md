@@ -51,7 +51,6 @@ This engine:
 ## Build and run (native)
 
 ```bash
-cd "/Users/nk/Documents/QuantumEngine"
 g++ -O2 -std=c++20 -Wall -Wextra -o qengine main.cpp Simulator.cpp
 ./qengine
 g++ -O2 -std=c++20 -Wall -Wextra -o qengine_test qengine_test.cpp Simulator.cpp
@@ -61,7 +60,6 @@ g++ -O2 -std=c++20 -Wall -Wextra -o qengine_test qengine_test.cpp Simulator.cpp
 ## Docker build and run
 
 ```bash
-cd "/Users/nk/Documents/QuantumEngine"
 docker build -t quantumengine:local .
 docker run --rm quantumengine:local
 ```
@@ -94,7 +92,6 @@ This validates probability conservation and catches kernel precision issues.
 ## Run the 3 tests quickly
 
 ```bash
-cd "/Users/nk/Documents/QuantumEngine"
 g++ -O2 -std=c++20 -Wall -Wextra -o qengine_test qengine_test.cpp Simulator.cpp
 ./qengine_test
 bash ./run_ghz_storage_test.sh
