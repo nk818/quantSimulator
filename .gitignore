@@ -1,0 +1,8 @@
+.quantumengine_state/
+qe_run*/
+qe_tiles*/
+tile_*.bin
+final_state.bin
+qengine
+qengine_test
+
